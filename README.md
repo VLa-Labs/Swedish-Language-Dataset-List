@@ -1,32 +1,31 @@
-
 <div align="center">
 
-# 🇸🇪 Samling av Svenska Datamängder
+# 🇸🇪 Swedish Language Datasets Collection
 
-[![English](https://img.shields.io/badge/Lang-English-blue)](./README.md)
+[![English](https://img.shields.io/badge/Lang-English-gray)](./README.md)
 [![简体中文](https://img.shields.io/badge/Lang-简体中文-blue)](./README_zh.md)
-[![Svenska](https://img.shields.io/badge/Lang-Svenska-gray)](./README_sv.md)
+[![Svenska](https://img.shields.io/badge/Lang-Svenska-blue)](./README_sv.md)
 
 </div>
 
 ---
 
-## 📖 Introduktion
-Detta projekt innehåller metadata för **60** offentligt tillgängliga svenska datamängder.
-Listan beskriver varje datamängds källa, tillämpbara uppgifter, modalitet och åtkomstlänkar, syftande till att hjälpa NLP-forskare att snabbt hitta lämpliga svenska korpusar.
+## 📖 Introduction
+This repository contains a curated index of **60 publicly available Swedish language datasets**.
+It details metadata such as source, applicable tasks, modality, and access links, designed to help NLP researchers and linguists quickly locate suitable Swedish corpora.
 
-**Huvudfält:**
-- `Dataset Name`: Namn på datamängden
-- `Dataset Description`: Kort beskrivning
-- `Tasks`: Uppgifter (t.ex. NLP, POS-taggning)
-- `Modality`: Datamodalitet (Text, Tal, Bild, etc.)
-- `Citing/Cited Papers`: Akademiska referenser
+**Key Fields:**
+- `Dataset Name`: Name of the dataset
+- `Dataset Description`: Brief summary of contents
+- `Tasks`: Applicable NLP tasks (e.g., Sentiment Analysis, POS tagging)
+- `Modality`: Data type (Text, Speech, Image, etc.)
+- `Citing/Cited Papers`: Related academic references
 
-## 📊 Förhandsgranskning (Data Preview)
+## 📊 Data Preview
 
-> 💡 **Tips:** Klicka på [swedish_vocabulary.csv](./swedish_vocabulary.csv) för att se hela listan.
+> 💡 **Tip:** Click [swedish_vocabulary.csv](./swedish_vocabulary.csv) to view the full, searchable table.
 
-Nedan visas en förhandsgranskning av de första 5 raderna:
+Below is a preview of the first 5 entries:
 
 | ID | Dataset Name | Modality | Tasks | Dataset Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -36,15 +35,20 @@ Nedan visas en förhandsgranskning av de första 5 raderna:
 | 9699 | CoNLL17 corpus | Text | Part-of-speech tagging | CoNLL17 is a multilingual dependency parsing corpus covering 45 languages... |
 | 9700 | Cross-linguistic Lexical Task (CLT) | Text, Speech, Image | Vocabulary comprehension assessment | A dataset of cross-linguistic vocabulary assessment tasks... |
 
-## 🚀 Användning
+*(Please download the CSV file to see all 60 datasets)*
 
-### Exempel med Python
+## 🚀 Usage
+
+### 1. Browse on GitHub
+Simply click on the `swedish_vocabulary.csv` file above to use GitHub's built-in table viewer with search and filter capabilities.
+
+### 2. Load with Python
 ```python
 import pandas as pd
 
-# Läs in datamängden
-url = "[https://raw.githubusercontent.com/DITT_ANVÄNDARNAMN/REPO_NAMN/main/swedish_vocabulary.csv](https://raw.githubusercontent.com/DITT_ANVÄNDARNAMN/REPO_NAMN/main/swedish_vocabulary.csv)"
+# Load the dataset directly from GitHub
+url = "[https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/swedish_vocabulary.csv](https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/swedish_vocabulary.csv)"
 df = pd.read_csv(url)
 
-# Exempel
-print(df[['Dataset Name', 'Tasks']].head())
+# Example: Filter for 'Text' datasets
+print(df[df['Modality'].str.contains('Text', na=False)].head())
