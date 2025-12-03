@@ -23,7 +23,7 @@ It details metadata such as source, applicable tasks, modality, and access links
 
 ## 📊 Data Preview
 
-> 💡 **Tip:** Click [swedish_dataset_list](./swedish_dataset_list) to view the full, searchable table.
+> 💡 **Tip:** Click [swedish_dataset_list](./swedish_dataset_list.csv) to view the full, searchable table.
 
 Below is a preview of the first 5 entries:
 
@@ -47,7 +47,7 @@ Simply click on the `swedish_dataset_list` file above to use GitHub's built-in t
 import pandas as pd
 
 # Load the dataset directly from GitHub
-url = "[https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/swedish_dataset_list](https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/swedish_dataset_list)"
+url = "[https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/swedish_dataset_list.csv](https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/swedish_dataset_list.csv)"
 df = pd.read_csv(url)
 
 # Example: Filter for 'Text' datasets
