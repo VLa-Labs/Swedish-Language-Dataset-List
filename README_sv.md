@@ -23,7 +23,7 @@ Listan beskriver varje datamängds källa, tillämpbara uppgifter, modalitet och
 
 ## 📊 Förhandsgranskning (Data Preview)
 
-> 💡 **Tips:** Klicka på [swedish_vocabulary.csv](./swedish_vocabulary.csv) för att se hela listan.
+> 💡 **Tips:** Klicka på [swedish_dataset_list](./swedish_dataset_list) för att se hela listan.
 
 Nedan visas en förhandsgranskning av de första 5 raderna:
 
@@ -42,7 +42,7 @@ Nedan visas en förhandsgranskning av de första 5 raderna:
 import pandas as pd
 
 # Läs in datamängden
-url = "[https://raw.githubusercontent.com/DITT_ANVÄNDARNAMN/REPO_NAMN/main/swedish_vocabulary.csv](https://raw.githubusercontent.com/DITT_ANVÄNDARNAMN/REPO_NAMN/main/swedish_vocabulary.csv)"
+url = "[https://raw.githubusercontent.com/DITT_ANVÄNDARNAMN/REPO_NAMN/main/swedish_dataset_list](https://raw.githubusercontent.com/DITT_ANVÄNDARNAMN/REPO_NAMN/main/swedish_dataset_list)"
 df = pd.read_csv(url)
 
 # Exempel
