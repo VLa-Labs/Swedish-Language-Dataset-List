@@ -23,7 +23,7 @@
 
 ## 📊 数据预览 (Preview)
 
-> 💡 **提示：** 点击 [swedish_vocabulary.csv](./swedish_vocabulary.csv) 可查看完整列表。
+> 💡 **提示：** 点击 [swedish_dataset_list](./swedish_dataset_list) 可查看完整列表。
 
 以下是精选的前 5 条数据预览：
 
@@ -44,7 +44,7 @@
 import pandas as pd
 
 # 读取数据集
-url = "[https://raw.githubusercontent.com/您的用户名/仓库名/main/swedish_vocabulary.csv](https://raw.githubusercontent.com/您的用户名/仓库名/main/swedish_vocabulary.csv)"
+url = "[https://raw.githubusercontent.com/您的用户名/仓库名/main/swedish_dataset_list](https://raw.githubusercontent.com/您的用户名/仓库名/main/swedish_dataset_list)"
 df = pd.read_csv(url)
 
 # 示例：筛选所有包含 "Text" 模态的数据集
