@@ -1,4 +1,4 @@
-# 🇸🇪 Swedish Language Datasets Collection
+#  Swedish Language Datasets Collection
 
 ![Data Size](https://img.shields.io/badge/Datasets-38-blue)
 ![Language](https://img.shields.io/badge/Language-Swedish-yellow)
