@@ -1,54 +1,33 @@
-<div align="center">
-
 # 🇸🇪 Swedish Language Datasets Collection
 
-[![English](https://img.shields.io/badge/Lang-English-gray)](./README.md)
-[![简体中文](https://img.shields.io/badge/Lang-简体中文-blue)](./README_zh.md)
-[![Svenska](https://img.shields.io/badge/Lang-Svenska-blue)](./README_sv.md)
+![Data Size](https://img.shields.io/badge/Datasets-38-blue)
+![Language](https://img.shields.io/badge/Language-Swedish-yellow)
+![License](https://img.shields.io/badge/License-CC%20BY%204.0-green)
 
-</div>
+##  Introduction
+This repository contains a curated metadata collection of **38 publicly available Swedish language datasets**.
 
----
+It is designed to help NLP researchers, linguists, and students quickly locate resources for various tasks such as **Sentiment Analysis**, **Dependency Parsing**, and **Second Language Acquisition (L2)** research.
 
-## 📖 Introduction
-This repository contains a curated index of **60 publicly available Swedish language datasets**.
-It details metadata such as source, applicable tasks, modality, and access links, designed to help NLP researchers and linguists quickly locate suitable Swedish corpora.
+**Key Metadata Fields:**
+- **Dataset Name**: The official name of the resource.
+- **URL**: Direct link to the dataset or project page.
+- **Modality**: The type of data (e.g., Text).
+- **Tasks**: Applicable NLP tasks.
+- **Description**: A brief summary of the dataset's content and purpose.
 
-**Key Fields:**
-- `Dataset Name`: Name of the dataset
-- `Dataset Description`: Brief summary of contents
-- `Tasks`: Applicable NLP tasks (e.g., Sentiment Analysis, POS tagging)
-- `Modality`: Data type (Text, Speech, Image, etc.)
-- `Citing/Cited Papers`: Related academic references
+##  Data Preview
 
-## 📊 Data Preview
+>  **Tip:** Click on the file [swedish_dataset_list.csv](./swedish_dataset_list.csv) above to view the full, searchable table in GitHub.
 
-> 💡 **Tip:** Click [swedish_dataset_list](./swedish_dataset_list.csv) to view the full, searchable table.
+Below is a preview of the first 5 datasets included in the collection:
 
-Below is a preview of the first 5 entries:
+| Dataset Name | Modality | Tasks | Description |
+| :--- | :--- | :--- | :--- |
+| **absabank-imm** | Text | Stance Analysis, Fine-grained Sentiment Analysis | A sub-dataset included in the SuperLim-2 benchmark suite, focusing on immigration topics. |
+| **ASU** | Text | Interlanguage Analysis, Second Language Acquisition | A Swedish written corpus built under the Språkbanken Text project. |
+| **COCTAILL** | Text | Readability Assessment, L2 Textbook Corpus | A textbook corpus for learners of Swedish as a second language (L2), including texts and exercises. |
+| **CoNLL 2017** | Text | Dependency Parsing, POS Tagging | A multilingual dependency parsing corpus covering 45 languages, providing end-to-end data. |
+| **Gold standard** | Text | Sentiment Analysis (Word Sense Polarity) | Derived from the Swedish semantic dictionary SALDO, containing annotated word senses. |
 
-| ID | Dataset Name | Modality | Tasks | Dataset Description |
-| :--- | :--- | :--- | :--- | :--- |
-| 9696 | ABSAbank-Imm | Text | language understanding | absabank-Imm is actually a sub-dataset included in the SuperLim-2 benchmark suite... |
-| 9697 | ASU | Text | Natural Language Processing (NLP) | ASU is a Swedish written corpus built under the Språkbanken Text project... |
-| 9698 | COCTAILL | Text | Natural Language Processing (NLP) | A textbook corpus for learners of Swedish as a second language (L2)... |
-| 9699 | CoNLL17 corpus | Text | Part-of-speech tagging | CoNLL17 is a multilingual dependency parsing corpus covering 45 languages... |
-| 9700 | Cross-linguistic Lexical Task (CLT) | Text, Speech, Image | Vocabulary comprehension assessment | A dataset of cross-linguistic vocabulary assessment tasks... |
-
-*(Please download the CSV file to see all 60 datasets)*
-
-## 🚀 Usage
-
-### 1. Browse on GitHub
-Simply click on the `swedish_dataset_list` file above to use GitHub's built-in table viewer with search and filter capabilities.
-
-### 2. Load with Python
-```python
-import pandas as pd
-
-# Load the dataset directly from GitHub
-url = "[https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/swedish_dataset_list.csv](https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/swedish_dataset_list.csv)"
-df = pd.read_csv(url)
-
-# Example: Filter for 'Text' datasets
-print(df[df['Modality'].str.contains('Text', na=False)].head())
+*(Please download the CSV file to view the complete list of 38 datasets)*
