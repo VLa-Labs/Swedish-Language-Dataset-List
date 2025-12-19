@@ -1,9 +1,4 @@
 #  Swedish Language Datasets Collection
-
-![Data Size](https://img.shields.io/badge/Datasets-38-blue)
-![Language](https://img.shields.io/badge/Language-Swedish-yellow)
-![License](https://img.shields.io/badge/License-CC%20BY%204.0-green)
-
 ##  Introduction
 This repository contains a curated metadata collection of **38 publicly available Swedish language datasets**.
 
@@ -11,9 +6,10 @@ It is designed to help NLP researchers, linguists, and students quickly locate r
 
 **Key Metadata Fields:**
 - **Dataset Name**: The official name of the resource.
-- **URL**: Direct link to the dataset or project page.
+- **Validate Dataset URL**: Valid dataset address link.
 - **Modality**: The type of data (e.g., Text).
 - **Tasks**: Applicable NLP tasks.
+- **Original Paper URL**: Link to the original paper where the dataset was published.
 - **Description**: A brief summary of the dataset's content and purpose.
 
 ##  Data Preview
@@ -22,12 +18,12 @@ It is designed to help NLP researchers, linguists, and students quickly locate r
 
 Below is a preview of the first 5 datasets included in the collection:
 
-| Dataset Name | Modality | Tasks | Description |
-| :--- | :--- | :--- | :--- |
-| **absabank-imm** | Text | Stance Analysis, Fine-grained Sentiment Analysis | A sub-dataset included in the SuperLim-2 benchmark suite, focusing on immigration topics. |
-| **ASU** | Text | Interlanguage Analysis, Second Language Acquisition | A Swedish written corpus built under the Språkbanken Text project. |
-| **COCTAILL** | Text | Readability Assessment, L2 Textbook Corpus | A textbook corpus for learners of Swedish as a second language (L2), including texts and exercises. |
-| **CoNLL 2017** | Text | Dependency Parsing, POS Tagging | A multilingual dependency parsing corpus covering 45 languages, providing end-to-end data. |
-| **Gold standard** | Text | Sentiment Analysis (Word Sense Polarity) | Derived from the Swedish semantic dictionary SALDO, containing annotated word senses. |
+| Dataset Name | Validate Dataset URL | Modality | Tasks | Original Paper URL | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **absabank-imm** | https://github.com/spraakbanken/SuperLim-2/tree/main/absabank-imm | Text | Stance Analysis, Fine-grained Sentiment Analysis (Topic: Immigration) | https://www.semanticscholar.org/paper/5e55751e63f3c4dbc44c38c079f9a242eedf70de| absabank-Imm is actually a sub-dataset included in the SuperLim-2 benchmark suite, focusing on a specific type of Swedish language understanding task. |
+| **ASU** | https://spraakbanken.gu.se/en/resources/asu | Text | Interlanguage Analysis, Second Language Acquisition Research | https://www.semanticscholar.org/paper/37fc56cd8d3fc87cf71d53543b713ba890dc7365 | ASU is a Swedish written corpus built under the Språkbanken Text project at the University of Gothenburg, Sweden. |
+| **COCTAILL** | https://spraakbanken.gu.se/en/resources/coctaill | Text | Readability Assessment, Linguistic Complexity Analysis (L2 Textbook Corpus) | https://www.semanticscholar.org/paper/6afde7c36e98481685913adb98d0aaca80f09edf | A textbook corpus for learners of Swedish as a second language (L2), including texts and activity exercises. |
+| **CoNLL 2017** | Swedish, Norwegian, Danish... | Text | Dependency Parsing, POS Tagging (Multilingual) | https://www.semanticscholar.org/paper/adb08319621b58f2443b9ce5a95c5eedbe45b7e1 | CoNLL17 is a multilingual dependency parsing corpus covering 45 languages, providing end-to-end data from raw text to labeled dependency trees. |
+| **SenSALDO** | https://spraakbanken.gu.se/en/resources/sensaldo | Text | Sentiment Analysis (Word Sense Polarity) | https://www.semanticscholar.org/paper/58ea9645b0e1418f0c6e528e8c004e134ab9738b | SenSALDO (Swedish Sentiment Lexicon based on SALDO) is a large-scale lexicon dataset for Swedish sentiment analysis. It is currently one of the most standard sentiment resources in the field of Swedish NLP. |
 
 *(Please download the CSV file to view the complete list of 38 datasets)*
